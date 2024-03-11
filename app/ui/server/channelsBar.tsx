@@ -18,13 +18,14 @@ import { redirect } from "next/navigation";
 async function ChannelGroupComponent(props: {
   groupData: ChannelGroup;
   selectedChannel: UID;
+  key: any;
 }) {
   const selectedChannel = props.selectedChannel;
 
   const channelsList = await fetchChannelList(props.groupData.id);
 
   return (
-    <ClientChannelGroupComponent groupData={props.groupData}>
+    <ClientChannelGroupComponent groupData={props.groupData} key={props.key}>
       {channelsList.map((channelData: ChannelInfo) => {
         return (
           <ChannelButton

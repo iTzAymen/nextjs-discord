@@ -9,12 +9,14 @@ import { Dispatch, SetStateAction, useState } from "react";
 export function ChannelButton(props: {
   channelData: ChannelInfo;
   selectedChannel: UID;
+  key: any;
 }) {
   const selectedChannel = props.selectedChannel;
   const { id, serverId, name } = props.channelData;
 
   return (
     <Link
+      key={props.key}
       href={`/server/${serverId}/${id}`}
       className={`h-[32px] bg-[#404249] rounded-[5px] flex hover:text-[#D7DADD] ${selectedChannel == id ? "!bg-opacity-100 !text-white" : "bg-opacity-0 text-[#8E9297] hover:bg-[#36373D]"} cursor-pointer transition-all`}
     >
