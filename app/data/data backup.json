@@ -1,0 +1,119 @@
+{
+    "serverList": [
+        {
+          "id": "1",
+          "serverName": "bois",
+          "backgroundColor": "#CC99FF",
+          "groups": ["1"],
+          "members": ["1", "2"]
+        },
+        {
+          "id": "2",
+          "serverName": "work",
+          "backgroundColor": "#99C8FF",
+          "groups": ["2"],
+          "members": ["2", "3"]
+        },
+        {
+          "id": "3",
+          "serverName": "fun",
+          "backgroundColor": "#99FFB6",
+          "groups": ["3", "4"],
+          "members": ["3", "1"]
+        }
+      ],
+      
+      "channelGroupList": [
+        { "id": "1", "serverId": "1", "name": "TEXT CHANNELS", "channels": ["1", "2", "3"] },
+        { "id": "2", "serverId": "2", "name": "TEXT CHANNELS", "channels": ["4", "5", "6"] },
+        { "id": "3", "serverId": "3", "name": "TEXT CHANNELS", "channels": ["7", "8", "9"] },
+        { "id": "4", "serverId": "3", "name": "FUN CHANNELS", "channels": ["10"] }
+      ],
+      
+      "channelList": [
+        { "id": "1", "serverId": "1", "groupId": "1", "name": "welcome" },
+        { "id": "2", "serverId": "1", "groupId": "1", "name": "general" },
+        { "id": "3", "serverId": "1", "groupId": "1", "name": "bois-chat" },
+      
+        { "id": "4", "serverId": "2", "groupId": "2", "name": "welcome" },
+        { "id": "5", "serverId": "2", "groupId": "2", "name": "general" },
+        { "id": "6", "serverId": "2", "groupId": "2", "name": "work-chat" },
+      
+        { "id": "7", "serverId": "3", "groupId": "3", "name": "welcome" },
+        { "id": "8", "serverId": "3", "groupId": "3", "name": "general" },
+        { "id": "9", "serverId": "3", "groupId": "3", "name": "fun-chat" },
+        { "id": "10", "serverId": "3", "groupId": "4", "name": "games-chat" }
+      ],
+      
+      "userList": [
+        {
+          "id": "1",
+          "email": "aymen@gmail.com",
+          "password": "aymen123",
+          "username": "Aymen",
+          "usertag": "8038",
+          "color": "#FFEF99",
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "email": "nadir@gmail.com",
+          "password": "nadir123",
+          "username": "nadir",
+          "usertag": "4190",
+          "color": "#CC99FF",
+          "status": "inactive"
+        },
+        {
+          "id": "3",
+          "email": "mohomesad@gmail.com",
+          "password": "mohomesad123",
+          "username": "Mohomesad",
+          "usertag": "0388",
+          "color": "#99FFB6",
+          "status": "active"
+        }
+      ],
+      
+      "messageList": [
+        {
+          "senderId": "1",
+          "channelId": "1",
+          "time": "Today at 3:28 PM",
+          "message": "hello"
+        },
+        {
+          "senderId": "2",
+          "channelId": "1",
+          "time": "Today at 3:30 PM",
+          "message": "heyy"
+        },
+        {
+          "senderId": "2",
+          "channelId": "4",
+          "time": "Today at 3:30 PM",
+          "message": "welcome"
+        }
+      ],
+      
+      "directMessageList": [
+        {
+          "senderId": "1",
+          "receiverId": "2",
+          "time": "Today at 3:28 PM",
+          "message": "sup"
+        },
+        {
+          "senderId": "2",
+          "receiverId": "1",
+          "time": "Today at 3:30 PM",
+          "message": "yo"
+        },
+        {
+          "senderId": "2",
+          "receiverId": "1",
+          "time": "Today at 3:30 PM",
+          "message": "goofy"
+        }
+      ]
+}
