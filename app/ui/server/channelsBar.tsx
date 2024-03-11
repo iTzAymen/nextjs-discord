@@ -61,7 +61,7 @@ export default async function ChannelsBar(props: {
         {channelGroupList &&
           channelGroupList.map((groupData: ChannelGroup) => {
             return (
-              <Suspense fallback={<ChannelGroupSkeleton />}>
+              <Suspense fallback={<ChannelGroupSkeleton />} key={groupData.id}>
                 <ChannelGroupComponent
                   key={groupData.id}
                   groupData={groupData}
